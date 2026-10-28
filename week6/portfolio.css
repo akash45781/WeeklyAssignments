@@ -34,7 +34,7 @@
   /* fixed height + overflow auto = scroll bar */
   .bio {
     height: 80px;
-    overflow: hidden;
+    overflow: auto;
     text-align: left;
     border: 1px solid #ccd;
     padding: 8px;
@@ -44,10 +44,10 @@
   /* fixed = always at the same place on screen */
   .fab {
     position: fixed;
-    right: 16px;
+    right: 17px;
     bottom: 16px;
     width: 55px;
-    height: 52px;
+    height: 55px;
     border: 10;
     border-radius: 50%;
     background: #ffb703;
