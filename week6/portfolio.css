@@ -1,5 +1,5 @@
  /* width will include padding and border (easier maths!) */
-  * { box-sizing: border-box; }
+  * { box-sizing:border-box; }
   body { margin: 0; font-family: Arial, sans-serif; background: #eef2f8; }
   /* sticky = stays at the top while you scroll */
   header {
@@ -34,7 +34,7 @@
   /* fixed height + overflow auto = scroll bar */
   .bio {
     height: 80px;
-    overflow: auto;
+    overflow: hidden;
     text-align: left;
     border: 1px solid #ccd;
     padding: 8px;
