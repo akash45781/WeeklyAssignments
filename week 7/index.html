@@ -17,7 +17,7 @@
     background: #12203a;
     color: white;
   }
-  nav ul { display: flex; list-style: none; }
+  nav ul { display: flex;gap: 20px;list-style: none; }
   nav a {color: white; text-decoration: none; padding: 0 12px;}
   nav a:hover {text-decoration: underline;}
    .btn{
@@ -30,7 +30,7 @@
    }
    .hero {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
     justify-content: center;
     gap: 12px;
@@ -40,9 +40,35 @@
     padding: 16px;
     color: white;
    }
+   .cards
+   {display:flex;flex-wrap:wrap;gap: 16px;padding: 24px;}
+   .cards{
+    flex:1 1 200px;
+    background:#eef2ff;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+   }
+   .tab{
+     padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+     background: #eef2ff;
+    margin-right: 10px;
+        }
+   #group{
+    display: flex;
+   }
+
     </style>
 </head>
 <body>
-    
-</body>
-</html>
+    <nav>
+        <h2> CodeLab</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        
