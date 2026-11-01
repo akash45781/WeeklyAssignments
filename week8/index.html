@@ -7,36 +7,37 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: Arial, sans-serif; background: #eef2f8; }
-  /* The whole page layout, with named areas */
+  
   .layout {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 170px 1fr;
     grid-template-areas:
       "head head"
       "side main"
       "foot foot";
     gap: 10px;
-    min-height: 100vh;
+    min-height: 110vh;
     padding: 10px;
   }
-  header { grid-area: head; background: #12203a; color: white; padding: 14px; border-radius: 8px; }
+  header { grid-area: head; background: #12203a; color: white; padding: 14px; border-radius: 10px; }
   aside  { grid-area: side; background: #dbe5fb; padding: 14px; border-radius: 8px; }
   main   { grid-area: main; }
-  footer { grid-area: foot; background: #12203a; color: white; padding: 12px; text-align: center; border-radius: 8px; }
+  footer { grid-area: foot; background: #3a122f; color: rgb(255, 255, 255); padding: 20px; text-align: center; border-radius: 10px; }
   aside li { margin: 8px 0 8px 18px; }
-  /* Boxes: as many columns as can fit */
+  
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
   }
- /* Flexbox inside each grid box */
+ 
   .item {
     display: flex;
     align-items: center;
     gap: 10px;
     background: white;
-    padding: 16px;
+    padding: 20px;
     border-radius: 10px;
   }
   .icon { font-size: 28px; }
@@ -61,7 +62,11 @@
         <div class="item"><span class="icon">&#11088;</span><div><b>4.8</b><br>Rating</div></div>
         <div class="item"><span class="icon">&#128172;</span><div><b>18</b><br>Messages</div></div>
         <div class="item"><span class="icon">&#9989;</span><div><b>92%</b><br>Done</div></div>
+        
       </div>
     </main>
-    <footer>Made with CSS Grid</footer>
+    <footer>made with CSS Grid </footer>
+     
   </div>
+</body>
+</html>
